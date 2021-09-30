@@ -1,0 +1,1 @@
+!function(){"use strict";document.addEventListener("DOMContentLoaded",(function(){var e=document.getElementById("header__burger"),t=document.getElementById("overlay__close"),n=document.getElementById("overlay");e.addEventListener("click",(function(){n.classList.add("active-overlay")})),t.addEventListener("click",(function(){n.classList.remove("active-overlay")}))}))}();

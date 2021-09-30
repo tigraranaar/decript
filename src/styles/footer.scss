@@ -1,0 +1,126 @@
+.footer {
+	padding-top: 60px;
+	padding-bottom: 120px;
+	font-family: "Montserrat-Bold", sans-serif;
+	background: linear-gradient(35.35deg, #fff7ec 20.41%, #fff5e3 81.3%);
+
+	@include mobile-small {
+		padding-top: 25px;
+		padding-bottom: 65px;
+	}
+
+	.footer__nav {
+		display: flex;
+		justify-content: space-between;
+		max-width: 83%;
+		margin: 0 auto;
+
+		@include mobile-small {
+			flex-wrap: wrap;
+			gap: 33px 0;
+			align-items: flex-end;
+			max-width: unset;
+		}
+
+		@include mobile-large {
+			align-items: center;
+		}
+
+		@include desktop-small {
+			max-width: none;
+		}
+
+		.footer__menu {
+			display: flex;
+			flex: 0 0 20%;
+			flex-direction: column;
+			gap: 28px;
+			padding-top: 20px;
+
+			@include mobile-small {
+				display: none;
+			}
+
+			.menu__link {
+				color: #333;
+				line-height: 20px;
+			}
+		}
+
+		.footer__logo {
+			display: flex;
+			flex: 0 0 29%;
+			padding-top: 25px;
+
+			@include mobile-small {
+				flex: 0 0 47%;
+			}
+
+			.footer__image {
+				width: 100%;
+			}
+		}
+
+		.footer__burger {
+			display: none;
+
+			@include mobile-small {
+				display: block;
+				order: 2;
+			}
+
+			.footer__burger-ico {
+				width: 100%;
+			}
+		}
+
+		.footer__contact {
+			display: flex;
+			flex: 0 0 20%;
+			flex-direction: column;
+			gap: 30px;
+			align-items: flex-end;
+
+			@include mobile-small {
+				flex: 0 0 100%;
+				order: 3;
+			}
+
+			.contact__phone {
+				display: flex;
+				gap: 14px;
+				align-items: center;
+				order: 2;
+
+				@include mobile-small {
+					display: none;
+				}
+
+				.contact__icon {
+					flex: 0 0 24px;
+				}
+
+				.contact__number {
+					color: #5eaf28;
+				}
+			}
+
+			.contact__button {
+				padding: 13px 35px;
+				color: #5eaf28;
+				font-size: 16px;
+				font-family: "Montserrat-Bold", sans-serif;
+				background: transparent;
+				border: 3px solid #5eaf28;
+				border-radius: 50px;
+				cursor: pointer;
+
+				@include mobile-small {
+					margin: 0 auto;
+					padding: 7px 17px;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}

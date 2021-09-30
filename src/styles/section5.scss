@@ -1,0 +1,114 @@
+.life {
+	background-image: url("../assets/images/life-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include mobile-small {
+		background-image: none;
+	}
+
+	.life__title {
+		padding-top: 155px;
+		color: #454;
+		font-size: 36px;
+		font-family: "Montserrat-Bold", sans-serif;
+		line-height: 44px;
+		letter-spacing: 0.3px;
+		text-align: center;
+
+		@include mobile-small {
+			padding-top: 0;
+			font-size: 20px;
+			line-height: 24px;
+			text-align: left;
+		}
+	}
+	.life__wrapepr {
+		padding-top: 105px;
+		padding-bottom: 145px;
+
+		@include mobile-small {
+			padding-top: 40px;
+			padding-bottom: 45px;
+		}
+		.life__ul {
+			display: flex;
+			justify-content: space-between;
+
+			@include mobile-small {
+				flex-wrap: wrap;
+				gap: 58px;
+			}
+			.life__list {
+				display: flex;
+				flex: 0 0 25%;
+				flex-direction: column;
+				gap: 30px;
+				align-items: center;
+
+				@include mobile-small {
+					flex: 0 0 100%;
+					gap: 10px;
+				}
+
+				.life__image-box {
+					height: 78px;
+
+					@include mobile-small {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						height: 71px;
+					}
+
+					.life__icon {
+						width: 100%;
+
+						@include mobile-small {
+							width: 75%;
+						}
+					}
+				}
+
+				.life__subtitle {
+					height: 50px;
+					color: #333;
+					font-size: 20px;
+					font-family: "Montserrat-Bold", sans-serif;
+					line-height: 24px;
+					text-align: center;
+
+					@include mobile-small {
+						font-size: 18px;
+					}
+				}
+				.life__paragraph {
+					color: #000;
+					font-size: 18px;
+					line-height: 28px;
+
+					@include mobile-small {
+						font-size: 16px;
+					}
+
+					@include desktop-small {
+						padding-top: 0 5px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	.life__bottom {
+		height: 145px;
+		background-color: #fff8ed;
+		clip-path: polygon(0 100%, 100% 0, 100% 100%);
+
+		@include mobile-small {
+			height: 45px;
+			margin-top: -1px;
+			clip-path: polygon(0 100%, 100% 35%, 100% 100%);
+		}
+	}
+}

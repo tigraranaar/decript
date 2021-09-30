@@ -1,0 +1,62 @@
+header.header 
+  .header__wrapper
+    .header__container.container
+      nav.header__nav
+        a.header__logo(href="/")
+          img.header__image(src="assets/images/logo.svg", alt="logo")
+        .header__menu
+          ul.menu__list.menu
+            li.menu__item.menu__item--active
+              a.menu__link(href="/") Главная
+            li.menu__item
+              a.menu__link(href="/") Как работает
+            li.menu__item
+              a.menu__link(href="/") Преимущества
+            li.menu__item
+              a.menu__link(href="/") Доставка
+            li.menu__item
+              a.menu__link(href="/") Контакты
+          .header__contact.contact
+            .contact__phone
+              img.contact__icon(src="assets/images/phone.svg", alt="")
+              a.contact__number 7 455 345 23 00
+            button.contact__button Обратный звонок
+        a.header__burger#header__burger
+          img.header__burger-ico(src="assets/images/burger.svg", alt="")  
+        include ./overlay.pug      
+      section.header__section
+        section.header__main
+          h1.header__title 
+            | GPS-ОШЕЙНИК
+          span.header__background-title PETSCOPE
+          h2.header__subtitle ДЛЯ ДОМАШНИХ ПИТОМЦЕВ
+          p.header__paragraph Контроль и безопасность вашего питомца во время прогулок
+        aside.header__aside.aside 
+          ul.aside__list 
+            li.aside__item
+              img.aside__icon(src="assets/images/aside-4.svg", alt="")
+              p.aside__text Спокойствие за вашего друга
+            li.aside__item
+              img.aside__icon(src="assets/images/aside-3.svg", alt="")
+              p.aside__text Онлайн наблюдение по телефону или с компьютера
+            li.aside__item
+              img.aside__icon(src="assets/images/aside-2.svg", alt="")
+              p.aside__text Быстрый и результативный поиск потеряшки
+            li.aside__item
+              img.aside__icon(src="assets/images/aside-1.svg", alt="")
+              p.aside__text Установление безопасных границ для питомца
+            li.aside__item
+              img.aside__icon(src="assets/images/aside-5.svg", alt="")
+              p.aside__text Гарантия на все ошейники на 1 год                                        
+      .header__order.header-order
+        form.header-order__form(action="") 
+          img.header-order__background(src="assets/images/order-bg.png", alt="")
+          h3.header-order__title Закажите ошейник и получите перчатку для расчесывания питомца! 
+          .header-order__fields
+            input.header-order__input(type="text" placeholder="Ваше имя")
+            input.header-order__input(type="text" placeholder="Ваш телефон")
+            button.header-order__button
+              | Заказать
+              img(src="assets/images/order-button.svg", alt="")
+  .header__bottom
+  

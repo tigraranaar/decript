@@ -1,0 +1,154 @@
+.delivery {
+	padding-bottom: 125px;
+	background-image: url("../assets//images/delivery-right.png");
+	background-repeat: no-repeat;
+	background-position: 100% 44%;
+
+	@include mobile-small {
+		padding-bottom: 77px;
+		background-image: url("../assets//images/order-left.png");
+		background-repeat: no-repeat;
+		background-position: 0 23%;
+		background-size: 30% 20%;
+	}
+	.delivery__wrapper {
+		max-width: 1070px;
+		margin: 0 auto;
+
+		.delivery__title {
+			max-width: 800px;
+			margin: 0 auto;
+			margin-top: 105px;
+			color: #ff865f;
+			font-size: 36px;
+			font-family: "Montserrat-Bold", sans-serif;
+			line-height: 44px;
+			text-align: center;
+
+			@include mobile-small {
+				margin-top: 56px;
+				font-size: 20px;
+				line-height: 24px;
+			}
+		}
+
+		.delivery__paragraph {
+			margin-top: 45px;
+			color: #000;
+			font-size: 28px;
+			line-height: 44px;
+			text-align: left;
+
+			@include mobile-small {
+				margin-top: 45px;
+				font-size: 16px;
+				line-height: 22px;
+				text-align: left;
+			}
+
+			.delivery__paragraph-important {
+				font-family: "Montserrat-Bold", sans-serif;
+			}
+		}
+
+		.delivery__title--bottom {
+			margin-top: 165px;
+			color: #414141;
+
+			@include mobile-small {
+				margin-top: 92px;
+			}
+		}
+
+		.delivery__paragraph-bottom {
+			margin-top: 25px;
+
+			@include mobile-small {
+				margin-top: 37px;
+			}
+		}
+
+		.delivery__select {
+			display: none;
+
+			@include mobile-small {
+				display: block;
+				height: 143px;
+
+				.delivery__select-title {
+					padding-top: 50px;
+					padding-left: 35px;
+					color: #bcbcbc;
+					font-size: 16px;
+					line-height: 20px;
+				}
+
+				.custom-select {
+					position: relative;
+					z-index: 10;
+					display: block;
+					width: 260px;
+					margin: 0 auto;
+					background: #ececec;
+					border-radius: 50px;
+					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+
+					select {
+						display: block;
+						width: 100%;
+						padding: 23px 0;
+						color: #72c43c;
+						font-size: 18px;
+						font-family: "Montserrat-Bold", sans-serif;
+						line-height: 22px;
+						text-align: center;
+						background: transparent;
+						border: none;
+						border-radius: 0;
+						outline: none;
+						appearance: none;
+					}
+
+					&::after {
+						position: absolute;
+						top: 15px;
+						right: 0;
+						z-index: -1;
+						width: 50px;
+						height: 100%;
+						color: #a4a4a4;
+						font-size: 24px;
+						line-height: 38px;
+						text-align: center;
+						content: "\2228";
+					}
+				}
+			}
+		}
+		.delivery__map {
+			.delivery__image--mobile {
+				display: none;
+			}
+
+			.delivery__image {
+				@include desktop-small {
+					width: 100%;
+				}
+			}
+
+			@include mobile-small {
+				.delivery__image--mobile {
+					display: block;
+					width: 111%;
+					margin-left: -5%;
+				}
+			}
+
+			@include mobile-small {
+				.delivery__image {
+					display: none;
+				}
+			}
+		}
+	}
+}

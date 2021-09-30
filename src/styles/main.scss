@@ -1,0 +1,70 @@
+@import "./fonts";
+@import "./media";
+@import "./overlay.scss";
+@import "header.scss";
+@import "section1.scss";
+@import "section2.scss";
+@import "section3.scss";
+@import "section4.scss";
+@import "section5.scss";
+@import "section6.scss";
+@import "section7.scss";
+@import "section8.scss";
+@import "footer.scss";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	min-width: 375px;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	font-family: "Montserrat-Regular", sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+}
+
+.container {
+	height: 100%;
+	margin: 0 auto;
+
+	@include mobile-small {
+		max-width: 335px;
+	}
+
+	@include mobile-large {
+		max-width: 420px;
+		max-width: 85vw;
+	}
+
+	@include tablet-medium {
+		max-width: 600px;
+		max-width: 85vw;
+	}
+
+	@include desktop-small {
+		max-width: 920px;
+		max-width: 90vw;
+	}
+
+	@include desktop-medium {
+		max-width: 1380px;
+	}
+
+	@include desktop-large {
+		max-width: 1600px;
+	}
+}

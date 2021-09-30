@@ -1,0 +1,8 @@
+mixin form(input_1_name, input_2_name, button_name, button_image_url, button_image_alt)
+  .form__fields
+    input.form____input(type="text" placeholder= input_1_name)
+    input.form____input(type="text" placeholder= input_2_name)
+    button.form____button= button_name
+    if button_image_url
+      img.form____button-icon(src= button-image, alt=button_image_alt)
+      

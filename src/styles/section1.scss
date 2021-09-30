@@ -1,0 +1,239 @@
+.expect {
+	padding-top: 42px;
+	padding-bottom: 155px;
+	background-color: #f6f6f6;
+
+	@include mobile-small {
+		padding-top: 0;
+		padding-bottom: 80px;
+		overflow-x: clip;
+		background-color: #fff8ed;
+	}
+
+	.expect__section-top {
+		.expect__textbox {
+			position: relative;
+			width: 1330px;
+			margin: 0 auto;
+			padding-top: 33px;
+			padding-right: 35px;
+			padding-bottom: 50px;
+			padding-left: 395px;
+			border: 10px solid #eae6df;
+
+			@include mobile-small {
+				width: 100%;
+				padding: 0 14px;
+				padding-top: 26px;
+				padding-bottom: 36px;
+			}
+
+			@include desktop-small {
+				z-index: 2;
+				width: 100%;
+				padding: 10px;
+			}
+
+			.expect__left-image {
+				position: absolute;
+				top: -70px;
+				left: -105px;
+
+				@include mobile-small {
+					top: auto;
+					bottom: -145px;
+					left: -10px;
+					width: 175px;
+				}
+
+				@include desktop-small {
+					left: -10px;
+					z-index: -1;
+				}
+
+				@include desktop-medium {
+					left: -10px;
+				}
+			}
+
+			.expect__right-image {
+				position: absolute;
+				top: -320px;
+				right: -232px;
+
+				@include mobile-small {
+					top: -148px;
+					right: -36px;
+					width: 345px;
+				}
+
+				@include desktop-small {
+					right: -50px;
+				}
+
+				@include desktop-medium {
+					right: -60px;
+				}
+			}
+
+			.expect__paragraph {
+				color: #000;
+				font-weight: 300;
+				font-size: 28px;
+				line-height: 44px;
+				letter-spacing: -0.2px;
+
+				@include mobile-small {
+					font-size: 16px;
+					line-height: 22px;
+				}
+			}
+
+			.expect__paragraph--important-text {
+				color: #ff865f;
+				letter-spacing: 0.5px;
+			}
+		}
+	}
+
+	.expect__section-bottom {
+		.expect__title {
+			max-width: 800px;
+			margin: 0 auto;
+			padding-top: 130px;
+			color: #404040;
+			font-size: 36px;
+			font-family: "Montserrat-Bold", sans-serif;
+			line-height: 44px;
+			letter-spacing: 0.3px;
+
+			@include mobile-small {
+				padding-top: 196px;
+				font-size: 20px;
+				line-height: 24px;
+			}
+		}
+
+		.expect__title--important {
+			color: #75b14e;
+		}
+
+		.expect__wrapper {
+			display: flex;
+			justify-content: center;
+			padding-top: 120px;
+
+			@include mobile-small {
+				flex-wrap: wrap;
+				padding-top: 40px;
+			}
+
+			.expect__wrapper-left {
+				flex: 0 0 45%;
+				padding-top: 20px;
+				padding-left: 85px;
+
+				@include mobile-small {
+					flex: 0 0 100%;
+					order: 2;
+					padding: 5px;
+					padding-top: 40px;
+				}
+
+				@include desktop-small {
+					flex: 0 0 50%;
+					padding-left: 0;
+				}
+
+				.expect__list {
+					display: flex;
+					flex-direction: column;
+					gap: 40px;
+					@include mobile-small {
+						gap: 28px;
+					}
+
+					.list__item {
+						display: flex;
+						gap: 25px;
+						align-items: center;
+
+						@include mobile-small {
+							gap: 24px;
+						}
+
+						.list__icon {
+							@include mobile-small {
+								width: 60px;
+							}
+						}
+
+						.list__text {
+							flex: 0 0 45%;
+							color: #000;
+							font-size: 18px;
+							font-family: "Montserrat-Regular", sans-serif;
+							line-height: 26px;
+
+							@include mobile-small {
+								flex: 0 0 75%;
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+			.expect__wrapper-right {
+				flex: 0 0 50%;
+
+				@include mobile-small {
+					flex: 0 0 90%;
+					order: 1;
+					height: auto;
+				}
+				.expect__imagebox {
+					display: flex;
+					flex-direction: column;
+					gap: 15px;
+					align-items: center;
+					justify-content: center;
+					width: 580px;
+					height: 480px;
+					background-color: #f6f0e5;
+					box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+					@include mobile-small {
+						width: 100%;
+						height: auto;
+						padding: 10px;
+					}
+
+					@include desktop-small {
+						width: auto;
+					}
+
+					.expect__bg {
+						width: 94%;
+
+						@include mobile-small {
+							width: 100%;
+						}
+					}
+
+					.expect__dog-message {
+						color: #52514f;
+						font-size: 44px;
+						font-family: "YanoneKaffeesatz-Regular", sans-serif;
+						line-height: 52px;
+						letter-spacing: 0.1em;
+
+						@include mobile-small {
+							font-size: 24px;
+							line-height: 8px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

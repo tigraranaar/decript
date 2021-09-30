@@ -1,0 +1,35 @@
+.header-order__fields {
+	display: flex;
+	flex: 0 0 77%;
+	justify-content: space-between;
+
+	.header-order__input {
+		width: 287px;
+		padding: 23px 0;
+		padding-left: 32px;
+		color: #b3b3b3;
+		font-weight: 500;
+		font-size: 22px;
+		font-family: "Montserrat-Medium", sans-serif;
+		background-color: #ececec;
+		border: 0;
+		border-radius: 50px;
+	}
+
+	.header-order__button {
+		display: flex;
+		gap: 15px;
+		align-items: center;
+		justify-content: center;
+		width: 251px;
+		padding: 23px 0;
+		padding-left: 32px;
+		color: #353535;
+		font-size: 24px;
+		font-family: "Montserrat-Bold", sans-serif;
+		background: #ffe55d;
+		border: 0;
+		border-radius: 50px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+	}
+}

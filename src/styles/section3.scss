@@ -1,0 +1,132 @@
+.consult {
+	padding-top: 70px;
+	background-color: #fff8ed;
+
+	@include desktop-small {
+		padding-bottom: 50px;
+	}
+
+	.consult__wrapper {
+		display: flex;
+
+		@include mobile-small {
+			flex-wrap: wrap;
+		}
+
+		.consult__left {
+			flex: 0 0 33%;
+
+			@include mobile-small {
+				flex: 0 0 100%;
+				order: 2;
+			}
+
+			.consult__image {
+				width: 92%;
+
+				@include mobile-small {
+					width: 86%;
+					padding-top: 22px;
+				}
+			}
+		}
+		.consult__right {
+			flex-grow: 1;
+
+			@include mobile-small {
+				flex: 0 0 100%;
+				order: 1;
+			}
+
+			.form {
+				.form__title {
+					padding-top: 40px;
+					color: #454545;
+					font-size: 36px;
+					font-family: "Montserrat-Bold", sans-serif;
+					line-height: 44px;
+					letter-spacing: 0.3px;
+
+					@include mobile-small {
+						padding-top: 0;
+						font-size: 20px;
+						line-height: 25px;
+						letter-spacing: 0.15px;
+						text-align: left;
+					}
+
+					@include desktop-small {
+						padding-top: 0;
+					}
+				}
+				.form__subtitle {
+					margin-top: 25px;
+					color: #000;
+					font-size: 28px;
+					line-height: 44px;
+					letter-spacing: -0.2px;
+
+					@include mobile-small {
+						margin-top: 33px;
+						font-size: 16px;
+						line-height: 22px;
+					}
+				}
+				.form__fields {
+					display: flex;
+					gap: 50px;
+					margin-top: 60px;
+
+					@include mobile-small {
+						flex-wrap: wrap;
+						gap: 33px;
+						justify-content: center;
+						margin-top: 22px;
+					}
+
+					@include desktop-small {
+						flex-wrap: wrap;
+						gap: 20px;
+						justify-content: center;
+					}
+
+					.form__input {
+						width: 287px;
+						height: 71px;
+						padding-left: 40px;
+						color: #a4a4a4;
+						font-weight: 500;
+						font-size: 22px;
+						line-height: 40px;
+						background: #ede7de;
+						border: 0;
+						border-radius: 50px;
+
+						@include mobile-small {
+							width: 270px;
+							height: 65px;
+							padding-left: 32px;
+						}
+					}
+					.form__button {
+						width: 251px;
+						height: 71px;
+						color: #fff;
+						font-size: 24px;
+						font-family: "Montserrat-Bold", sans-serif;
+						line-height: 29px;
+						background: #5eaf28;
+						border: 0;
+						border-radius: 50px;
+						box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+						@include mobile-small {
+							width: 270px;
+							height: 65px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

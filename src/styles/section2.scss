@@ -1,0 +1,238 @@
+section.gps {
+	background-color: #f6f6f6;
+	.gps__triangle {
+		height: 145px;
+		margin-bottom: -5px;
+		background-color: #75b14e;
+		clip-path: polygon(0 100%, 100% 0, 100% 100%);
+
+		@include mobile-small {
+			height: 55px;
+			margin-bottom: -1px;
+			clip-path: polygon(0 100%, 100% 50%, 100% 100%);
+		}
+	}
+
+	.gps__center {
+		background-color: #75b14e;
+		background-image: url("../assets//images//gps-right.png");
+		background-repeat: no-repeat;
+		background-position: 100% 86%;
+
+		@include mobile-small {
+			background-image: none;
+		}
+
+		.gps__top-section {
+			display: flex;
+			align-items: stretch;
+			justify-content: center;
+			padding-bottom: 252px;
+			background-image: url("../assets//images//gps-bg.png");
+			background-repeat: no-repeat;
+			background-position: 60% 0%;
+
+			@include mobile-small {
+				flex-wrap: wrap;
+				padding-bottom: 100px;
+				background-position: center 35%;
+				background-size: 120%;
+			}
+			.gps__left {
+				position: relative;
+				flex: 0 0 41.5%;
+
+				@include mobile-small {
+					flex: 0 0 100%;
+					padding-bottom: 297px;
+				}
+
+				@include desktop-small {
+					flex: 0 0 50%;
+				}
+				.gps__title {
+					padding-top: 190px;
+					color: #fff;
+					font-size: 36px;
+					font-family: "Montserrat-Bold", sans-serif;
+					line-height: 44px;
+
+					@include mobile-small {
+						padding-top: 77px;
+						font-size: 20px;
+						line-height: 24px;
+					}
+
+					.gps__title-important {
+						color: #ffe55d;
+					}
+				}
+				.gps__image {
+					position: absolute;
+					top: 400px;
+					left: 241px;
+
+					@include mobile-small {
+						top: 248px;
+						right: 31px;
+						left: auto;
+						width: 107px;
+					}
+
+					@include desktop-small {
+						top: 450px;
+						left: 140px;
+					}
+				}
+			}
+			.gps__right {
+				position: relative;
+				flex: 0 0 41.5%;
+
+				@include mobile-small {
+					flex: 0 0 99%;
+				}
+
+				@include desktop-small {
+					flex: 0 0 50%;
+				}
+				.gps__title {
+					max-width: 650px;
+					padding-top: 588px;
+					color: #fff;
+					font-size: 36px;
+					font-family: "Montserrat-Bold", sans-serif;
+					line-height: 44px;
+
+					@include mobile-small {
+						padding-top: 0;
+						font-size: 20px;
+						line-height: 24px;
+					}
+
+					.gps__title-important {
+						color: #ffe55d;
+					}
+				}
+				.gps__image {
+					position: absolute;
+					top: 175px;
+					left: 325px;
+
+					@include mobile-small {
+						top: -239px;
+						right: auto;
+						left: 5px;
+						width: 107px;
+					}
+
+					@include desktop-small {
+						top: 175px;
+						left: 125px;
+					}
+				}
+			}
+		}
+
+		.gps__bottom-section {
+			.gps__bottom-title {
+				color: #fff;
+				font-size: 36px;
+				font-family: "Montserrat-Bold", sans-serif;
+				line-height: 44px;
+				text-align: center;
+
+				@include mobile-small {
+					font-size: 20px;
+					text-align: left;
+				}
+			}
+			.gps__wrapper {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 30px 20px;
+				margin-top: 100px;
+				padding-bottom: 190px;
+
+				@include mobile-small {
+					gap: 25px;
+					justify-content: center;
+					margin-top: 35px;
+					padding-bottom: 90px;
+				}
+
+				@include desktop-medium {
+					justify-content: center;
+				}
+
+				@include desktop-small {
+					justify-content: center;
+				}
+
+				.box {
+					position: relative;
+					z-index: 2;
+					flex: 0 0 32.5%;
+					height: 240px;
+					padding: 50px 40px 0 45px;
+					background: #fff;
+					box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+					@include mobile-small {
+						flex: 0 0 99%;
+						height: 265px;
+						padding: 36px 30px 0 30px;
+					}
+
+					@include desktop-small {
+						flex: 0 0 30%;
+						height: 360px;
+						padding-top: 30px;
+					}
+
+					@include desktop-medium {
+						flex: 0 0 30%;
+						padding-top: 30px;
+					}
+
+					.gps__bg {
+						position: absolute;
+						top: -15px;
+						right: 0;
+						bottom: 0;
+						left: 25px;
+						z-index: -1;
+						color: #f1f1f1;
+						font-size: 144px;
+						font-family: "Montserrat-Bold", sans-serif;
+						line-height: 176px;
+					}
+
+					.box__title {
+						color: #313131;
+						font-size: 20px;
+						font-family: "Montserrat-Bold", sans-serif;
+						line-height: 24px;
+
+						@include mobile-small {
+							font-size: 18px;
+						}
+					}
+					.box__pg {
+						margin-top: 40px;
+						color: #313131;
+						font-size: 20px;
+						font-family: "Montserrat", sans-serif;
+						line-height: 24px;
+
+						@include mobile-small {
+							margin-top: 18px;
+							font-size: 18px;
+							line-height: 28px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
